@@ -1,0 +1,203 @@
+.fontstyle{
+    font-family:Arial, 'Helvtica Neue',Helvetica, sans-serif;
+    color:#777777;
+}
+.fontclr{
+    color:#4aaaa5;
+    font-size:2em;
+}
+#header{
+
+    margin-bottom: 40px;    
+    padding:15px;
+    background-color: #ffffff;
+    border-bottom:2px solid #cccccc;
+    border-width: 100%;
+    font-family:Georgia, 'Times New Roman',Times, serif;
+padding-left:200px;
+}
+.borderbotom{
+    border-bottom:1px solid #7e7c7c;
+
+}
+
+#body{
+    margin:0;
+    padding: 0;
+    background-image:url("../images/gravel.png");
+
+}
+#contentarea{
+    width:960px;
+    box-sizing: border-box;    align-content: center;
+    background-color: white;
+
+}
+#myimg{
+    float:left;
+    margin-bottom:5px;
+    margin-right:20px;    
+}
+.img{
+ margin-bottom:10px;
+margin-right:10px;}
+#p1{
+    display:inline;
+line-height:30px;
+}
+#h{
+   display:inline;
+    width:20%;
+    padding:17px;
+    margin-left:0;
+    background:#4aaaa5;
+    color:white;
+    margin-bottom:10px;
+
+}
+.nav {
+    display:inline;
+    padding:10px;
+    text-align:center;
+
+
+}
+.decor
+{
+    text-decoration:none;
+    text-align:center;
+    padding:10px;
+
+}
+
+.border{
+    border-right:1px solid #666666;
+
+}
+#float
+{
+    float:right;
+    padding-right:190px;
+
+}
+#section{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+
+}
+
+#footer{
+    text-align:center;
+    position:fixed;
+    padding:30px;
+    bottom:0;
+    margin-left:auto;
+    margin-top:10px;
+width:100%;
+background-color:#666666;
+border-top: 8px solid #4aaaa5;
+}
+#contentarea{
+    margin:0;
+    padding:0;
+    margin-left:auto;
+    margin-right:auto;
+}#contactpage{
+    width:960px;
+    border: 1px solid #666666;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:25px;
+    background-color:white;
+}
+#aboutmepage{
+    padding-top:10px;
+border: 1px solid #666666;
+padding-left:20px;
+padding-right:20px;
+}
+#info{
+padding:20px 65px;
+line-height: 30px;
+box-sizing: border-box;
+/*margin-top:10px;*/
+}
+.contact{
+    
+    color:#4aaaa5;
+    margin-bottom: 20px;
+    border-bottom:2px solid #7e7c7c;
+    padding:20px;
+    padding-bottom:10px;
+}
+.Namebox{
+padding:10px;
+width: 100%;
+border:1px solid #666666;
+}
+#messagebox{
+    box-sizing:border-box;
+    width: 100%;
+    padding:30px;
+    border:1px solid #666666;
+
+}
+#submit{
+    width:10%;
+    border:1px solid #666666;
+background: #4aaaa5;
+color:white;
+padding:10px;
+margin-top:10px;
+text-align:center
+}
+#portfolio{
+    width:960px;
+    height:850px;
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid #666666;
+    padding-left:10px;
+    padding-right:10px;
+    background-color:white;
+}
+#heading{
+    color:#4aaaa5;
+    font-size:1em;
+    border-bottom:1px solid #666666;
+    margin-bottom:5px;
+}
+#contentarea1{
+    border:1px solid #666666;
+}
+#project{
+    display:flex;
+
+    width:60%;
+    flex-wrap:wrap;
+    margin:10px;
+    margin:10px;
+
+    overflow: scroll;
+
+}
+
+.column{
+    position:relative;
+}
+.box{
+    padding:15px;
+    background: #4aaaa5;
+ color:white;
+text-align:center;
+position:absolute;
+width:95%;
+bottom:30px;
+padding-left:0;
+padding-right:0;
+}
+nav a:hover{
+    background-color:lightgrey;
+}
+
