@@ -200,7 +200,7 @@ padding-right:0;
 nav a:hover{
     background-color:lightgrey;
 }
-#gamelink{
+.gamelink{
     text-decoration: none;
     color:white;
 }
