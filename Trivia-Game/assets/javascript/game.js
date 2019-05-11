@@ -2,7 +2,6 @@ $(document).ready(function () {
     var intervalID;
     $("#btn").on("click", function () {
 
-        // console.log("calling");
         var audioArray = ["../assets/images/correctanswer.mp3", "../assets/images/wronganswer.mp3"];
         var quesArr = [
             {
@@ -89,7 +88,6 @@ $(document).ready(function () {
                 correctAnswer=0;
                 unanswered=0;
                 quiz(i);
-                // console.log(i);
             });
 
 
@@ -98,7 +96,6 @@ $(document).ready(function () {
         function Timer() {
             var timer = 25;
 
-            // console.log("calling timer");
             var newDivTimer = $("<div />");
             newDivTimer.text("Time Remaining:" + " " + timer + " " + "seconds");
             $("#quiz").prepend(newDivTimer);
@@ -109,7 +106,6 @@ $(document).ready(function () {
                 timer--;
                 newDivTimer.text("Time Remaining:" + " " + timer + " " + "seconds");
 
-                // console.log(timer);
                 if (timer == 0 && i < quesArr.length) {
                     $("#quiz").text("Time's Up!!");
                     $("#quiz").append("<br>");
@@ -124,7 +120,6 @@ $(document).ready(function () {
                         endPage();
                     }
                     else {
-                        // console.log('else');
                         setTimeout(function () {
                             quiz(i);
                         }, 3000);
@@ -164,7 +159,6 @@ $(document).ready(function () {
             audio.attr("src", audioArray[0]);
             $("#quiz").append(audio);
             var image = $("<img>");
-            // console.log(quesArr[i].image);
             image.attr("src", quesArr[i].image);
             $("#quiz").append(quesArr[i].ans);
 
@@ -176,9 +170,6 @@ $(document).ready(function () {
         function buttonClick() {
             $(".button").on("click", function () {
 
-                // console.log("clicked");
-                // console.log($(this).text());
-                // console.log(i);
                 if (($(this).text()) == quesArr[i].ans) {
                     // alert("correct");
                     correctAnswer++;
@@ -191,8 +182,6 @@ $(document).ready(function () {
                 }
                 else {
                     wrongAnswer++;
-                    // console.log("wrongAnswer" + wrongAnswer);
-                    // console.log("index-wrong" + i);
                     $("#quiz").text("NOPE!!!" + " " + quesArr[i].ans + " " + "is the Correct Answer");
                     var audio = $("<audio>");
                     audio.attr("src", audioArray[1]);
@@ -210,7 +199,6 @@ $(document).ready(function () {
                 setTimeout(function () {
                     quiz(i);
                 }, 3000);
-                // console.log(i);
             });
 
         };

@@ -21,29 +21,15 @@ $(document).ready(function () {
     
     }
     randomNumberGenerator();
-    console.log(randomNumber);
-
-    console.log(redCrystalNumber);
-    console.log(blueCrystalNumber);
-
-    console.log(yellowCrystalNumber);
-
-    console.log(greenCrystalNumber);
-
-
     $("#randomNumber").html(randomNumber);
     
     function scoreCheck() {
     
-         console.log("your score is:"+scoreCounter);
-        //  console.log("random number is:"+randomNumber);
         if (scoreCounter==randomNumber) {
             win++;
             $("#win").html("Wins:" + win);
-            console.log("equal,you won!");
             randomNumberGenerator();
             $("#randomNumber").html(randomNumber);
-            console.log(scoreCounter);
              $("#scoreCounter").html(scoreCounter);
         
         }
@@ -51,11 +37,8 @@ $(document).ready(function () {
             if (scoreCounter > randomNumber) {
                 loss++;
                 $("#loss").html("Losses:"+ loss);
-                console.log("You loss"+ loss);
                 randomNumberGenerator();
                 $("#randomNumber").html(randomNumber);
-                console.log(scoreCounter);
-
                  $("#scoreCounter").html(scoreCounter);
 
 
@@ -66,10 +49,7 @@ $(document).ready(function () {
         }
     };
     $("#redCrystal").click(function () {
-        console.log("redclick:"+redCrystalNumber);
-        console.log(scoreCounter);
         scoreCounter += redCrystalNumber;
-        console.log("score" + scoreCounter);
         $("#scoreCounter").text(scoreCounter);
         scoreCheck(scoreCounter);
 
@@ -77,51 +57,28 @@ $(document).ready(function () {
 
     });
     $("#blueCrystal").click(function () {
-        console.log("blueclick:"+blueCrystalNumber);
         scoreCounter += blueCrystalNumber;
-        console.log("score" + scoreCounter);
         $("#scoreCounter").html(scoreCounter);
         scoreCheck(scoreCounter);
-        console.log("calling");
 
     });
 
     $("#greenCrystal").click(function () {
-        console.log("greenclick:"+ greenCrystalNumber);
         scoreCounter += greenCrystalNumber;
-        console.log("score" + scoreCounter);
         $("#scoreCounter").html(scoreCounter);
         scoreCheck(scoreCounter);
-        console.log("calling");
-
-
-
-
     });
 
     $("#yellowCrystal").click(function () {
 
-        console.log("yellowclick:"+yellowCrystalNumber);
         scoreCounter += yellowCrystalNumber;
-        console.log("score" + scoreCounter);
         $("#scoreCounter").html(scoreCounter);
         scoreCheck(scoreCounter);
-        console.log("calling");
 
 
 
 
     });
-
-
-
-    // $.fn.scoreCount = function(crystalNumber){ 
-    //     $("#scoreCounter").text(crystalNumber);
-    //     scoreCounter+=crystalNumber;
-    //     console.log(scoreCounter);
-    // // }
-    // scoreCount();
-
 }
 );
 
