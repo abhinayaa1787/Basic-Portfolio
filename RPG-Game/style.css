@@ -1,0 +1,15 @@
+#header{
+    float:right;
+}
+body{
+    background-image: url("./images/background.jpg");
+}
+#kenobi,#luke,#darthsidious,#darthmaul{
+    display:inline-block;
+    border:2px solid rgb(88, 218, 88);
+    padding:5px 8px;
+    text-align:center;
+}
+h6{
+    margin:0;
+}

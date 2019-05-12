@@ -11,8 +11,7 @@ firebase.initializeApp(config);
 
 var db = firebase.database();
 
-$("#submitButton").on("click", function (event) 
-{
+$("#submitButton").on("click", function (event) {
   event.preventDefault();
 
   var trainName = $("#trainName").val().trim();

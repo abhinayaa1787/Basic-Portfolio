@@ -173,11 +173,9 @@ text-align:center
 }
 #project{
     display:flex;
-
-    width:60%;
+    width:95%;
     flex-wrap:wrap;
-    margin:10px;
-    margin:10px;
+    margin:40px;
 
     overflow: scroll;
 
@@ -204,4 +202,9 @@ nav a:hover{
     text-decoration: none;
     color:white;
 }
+#petbook{
+    /* border:1px solid black; */
+    margin-right:0;
+    margin-bottom:0;
 
+}
