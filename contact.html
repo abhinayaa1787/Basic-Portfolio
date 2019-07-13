@@ -54,9 +54,10 @@
  </footer>
  <script>
      $(function(){
+        // $("#submit").prop("disabled", "false");
+
          $("#submit").on("click",function(){
          $(".error").hide();
-         $("#submit").prop("disabled", "false");
 
          var name=$("#name").val();
          var mail=$("#email").val();
@@ -65,19 +66,19 @@ console.log(message.length);
          if(name.length<1){
             $("#name").after("<span class='error'>Name required</span>");
       $("#name").focus();
-      $("#submit").prop("disabled", "true");
+    //   $("#submit").prop("disabled", "true");
 
          }
          if(mail.length<1){
             $("#email").after("<span class='error'>Email required</span>");
       $("#email").focus();
-      $("#submit").prop("disabled", "true");
+    //   $("#submit").prop("disabled", "true");
 
          }
          if(message.length<1){
             $("#message").after("<span class='error'>Please type in your message</span>");
       $("#message").focus();
-      $("#submit").prop("disabled", "true");
+    //   $("#submit").prop("disabled", "true");
 
          }
 
