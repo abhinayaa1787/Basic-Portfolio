@@ -32,7 +32,7 @@
             <div id="contactpage">
             <div id="info">
             <h1 class="contact">Contact</h1>
-            <form action="mailto:abhinayaa1787@gmail.com" method="post" enctype="text/plain">
+            <form name="usrform" action="mailto:abhinayaa1787@gmail.com" method="post" enctype="text/plain">
                 Name:<br>
                     <input type="text" class="Namebox" name="name" id="name">
                     <br>
@@ -40,8 +40,7 @@
                     <input type="email" class="Namebox" name="email"  id="email">
                  
                     Message:<br>
-                    <textarea rows="5" cols="138" name="comment" form="usrform" id="message">
-                 </textarea>
+                    <textarea rows="5" cols="138" name="message" id="message"></textarea>
                  <br>
                  <input type="submit" id="submit" value="Submit" >
                  </br>
@@ -52,6 +51,7 @@
 <footer id="footer">
         Copyright&#169;
  </footer>
+ 
  <script>
      $(function(){
         // $("#submit").prop("disabled", "false");
@@ -59,10 +59,10 @@
          $("#submit").on("click",function(){
          $(".error").hide();
 
-         var name=$("#name").val();
-         var mail=$("#email").val();
-         var message=$("#message").val().trim();
-console.log(message.length);
+         var name=$("#name").val().trim();
+         var mail=$("#email").val().trim();
+         var message=$("textarea").val();
+console.log(message);
          if(name.length<1){
             $("#name").after("<span class='error'>Name required</span>");
       $("#name").focus();
