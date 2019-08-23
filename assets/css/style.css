@@ -161,6 +161,7 @@ text-align:center
     padding-left:10px;
     padding-right:10px;
     background-color:white;
+    overflow:scroll;
 }
 #heading{
     color:#4aaaa5;
